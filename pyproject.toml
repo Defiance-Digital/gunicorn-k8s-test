@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gunicorn-k8s-test"
+version = "0.1.0"
+description = ""
+authors = ["Mike Gray <michael.gray@defiance.ai>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^3.0.1"
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
