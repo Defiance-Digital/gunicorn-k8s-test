@@ -4,6 +4,8 @@ There is a dearth of information on how to run a Flask/Django app on Kubernetes 
 
 The code is written to work on a local Docker Desktop Kubernetes cluster. It's unlikely I will generalize it to work on other Kubernetes clusters, but feel free to fork and modify it to your needs. Pull requests with additional functionality are very welcome!
 
+tl;dr The conventional wisdom to use multiple workers in a containerized instance of Flask/Django/anything that is served with gunicorn is incorrect - you should only use one worker per container, otherwise you're not properly using the resources allocated to your application. Using multiple workers per container also runs the risk of OOM SIGKILLs without logging, making diagnosis of issues much more difficult than it would be otherwise.
+
 ## Execution
 
 Install Docker Desktop and enable Kubernetes. Then run:
