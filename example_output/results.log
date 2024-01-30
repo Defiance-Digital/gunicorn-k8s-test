@@ -1,0 +1,116 @@
+serviceaccount/metrics-server unchanged
+clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader unchanged
+clusterrole.rbac.authorization.k8s.io/system:metrics-server unchanged
+rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader unchanged
+clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator unchanged
+clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server unchanged
+service/metrics-server unchanged
+deployment.apps/metrics-server configured
+apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io unchanged
+Checking if metrics-server is available...
+metrics-server is available.
+Building Docker image...
+Deploying to Kubernetes...
+deployment.apps/python-app unchanged
+service/python-app-service unchanged
+Waiting for deployment to be ready...
+deployment "python-app" successfully rolled out
+Setting up port forwarding...
+Forwarding from 127.0.0.1:8080 -> 8000
+Forwarding from [::1]:8080 -> 8000
+Increasing memory consumption...
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"200 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 844Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"300 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 844Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"400 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 844Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"100 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"200 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"500 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"600 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"300 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"100 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"400 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"200 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"500 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"600 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"300 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"400 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"100 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"500 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"200 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Handling connection for 8080
+{"message":"Increased memory consumption by 100 MB","status":"success","total_consumed":"300 MB"}
+Memory usage after request:
+python-app-68d966694-774f4 443Mi
+Fetching logs from the container...
+[2024-01-30 16:01:44 +0000] [7] [INFO] Starting gunicorn 21.2.0
+[2024-01-30 16:01:44 +0000] [7] [INFO] Listening at: http://0.0.0.0:8000 (7)
+[2024-01-30 16:01:44 +0000] [7] [INFO] Using worker: sync
+[2024-01-30 16:01:44 +0000] [9] [INFO] Booting worker with pid: 9
+[2024-01-30 16:01:44 +0000] [10] [INFO] Booting worker with pid: 10
+[2024-01-30 16:02:00 +0000] [7] [ERROR] Worker (pid:10) was sent SIGKILL! Perhaps out of memory?
+[2024-01-30 16:02:00 +0000] [11] [INFO] Booting worker with pid: 11
+[2024-01-30 16:02:06 +0000] [7] [ERROR] Worker (pid:9) was sent SIGKILL! Perhaps out of memory?
+[2024-01-30 16:02:06 +0000] [12] [INFO] Booting worker with pid: 12
+[2024-01-30 16:02:28 +0000] [7] [ERROR] Worker (pid:11) was sent SIGKILL! Perhaps out of memory?
+[2024-01-30 16:02:28 +0000] [13] [INFO] Booting worker with pid: 13
+[2024-01-30 16:02:35 +0000] [7] [ERROR] Worker (pid:12) was sent SIGKILL! Perhaps out of memory?
+[2024-01-30 16:02:35 +0000] [14] [INFO] Booting worker with pid: 14
+[2024-01-30 16:02:44 +0000] [7] [ERROR] Worker (pid:13) was sent SIGKILL! Perhaps out of memory?
+[2024-01-30 16:02:44 +0000] [15] [INFO] Booting worker with pid: 15
