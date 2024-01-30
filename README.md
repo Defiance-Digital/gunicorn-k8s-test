@@ -1,6 +1,6 @@
 # gunicorn-k8s-test
 
-There is a dearth of information on how to run a Flask app on Kubernetes using Gunicorn. What information is available is often conflicting and confusing. Based on issues I've seen with my customers over the last year, this repository aims to test the exact impact of running multiple gunicorn workers in a single Kubernetes pod.
+There is a dearth of information on how to run a Flask/Django app on Kubernetes using Gunicorn. What information is available is often conflicting and confusing. Based on issues I've seen with my customers over the last year, this repository aims to test the exact impact of running multiple gunicorn workers in a single Kubernetes pod.
 
 The code is written to work on a local Docker Desktop Kubernetes cluster. It's unlikely I will generalize it to work on other Kubernetes clusters, but feel free to fork and modify it to your needs. Pull requests with additional functionality are very welcome!
 
